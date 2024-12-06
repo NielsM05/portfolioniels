@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-dark-blue text-white fixed w-full z-10">
+  <nav class="bg-darkest-blue text-white fixed w-full z-10">
     <div class="container mx-auto px-4 flex items-center h-16 relative">
       <!-- Site Name -->
       <div class="logo">
@@ -10,25 +10,25 @@
         <div class="flex space-x-6">
           <router-link
               to="/"
-              class="hover:text-blue-accent transition duration-300"
+              class="hover:text-purple-accent transition duration-300"
           >
             Home
           </router-link>
           <router-link
               to="/about"
-              class="hover:text-blue-accent transition duration-300"
+              class="hover:text-purple-accent transition duration-300"
           >
             About
           </router-link>
           <router-link
               to="/projects"
-              class="hover:text-blue-accent transition duration-300"
+              class="hover:text-purple-accent transition duration-300"
           >
             Projects
           </router-link>
           <router-link
               to="/contact"
-              class="hover:text-blue-accent transition duration-300"
+              class="hover:text-purple-accent transition duration-300"
           >
             Contact
           </router-link>

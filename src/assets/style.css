@@ -4,5 +4,22 @@
 
 /* Global background color */
 body {
-    @apply bg-dark-blue text-white;
+    @apply bg-dark-purple text-white;
+}
+
+/* Custom colors */
+.bg-dark-purple {
+    background-color: #121212; /* Darker shade */
+}
+
+.bg-purple-accent {
+    background-color: #6a0dad;
+}
+
+.hover\:bg-purple-700:hover {
+    background-color: #4b0082;
+}
+
+.hover\:text-purple-accent:hover {
+    color: #6a0dad;
 }
