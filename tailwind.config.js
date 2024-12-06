@@ -1,15 +1,24 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin")
+
 export default {
-  content: ['./src/**/*.{vue,js,ts,jsx,tsx}'
-  ],
+  content: ['./src/**/*.{vue,js,ts,jsx,tsx}', 'index.html'],
   theme: {
     extend: {
-      colors:{
+      colors: {
         'dark-blue': '#0a0f29',
         'blue-accent': '#4c8bf5',
-      }
+        glow: 'color-mix(in srgb, var(--glow-color) calc(<alpha-value> * 100%), transparent)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    plugin(
+        function ({ addVariant }) {
+          addVariant("glow", ".glow-capture .glow-overlay &")
+        }
+    ),
+  ],
 }
-
