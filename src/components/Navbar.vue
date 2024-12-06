@@ -1,12 +1,12 @@
 <template>
   <nav class="bg-darkest-blue text-white fixed w-full z-10">
-    <div class="container mx-auto px-4 flex items-center h-16 relative">
+    <div class="container mx-auto px-4 flex items-center h-16 justify-between">
       <!-- Site Name -->
       <div class="logo border-b-4 border-purple-accent">
         <router-link to="/" class="text-white text-xl font-bold">Portfolio Niels</router-link>
       </div>
-      <!-- Centered Links -->
-      <div class="absolute left-1/2 transform -translate-x-1/2 mt-4 flex space-x-6">
+      <!-- Right Aligned Links -->
+      <div class="flex space-x-6">
         <router-link
             to="/"
             class="nav-link hover:text-purple-accent transition duration-300"
