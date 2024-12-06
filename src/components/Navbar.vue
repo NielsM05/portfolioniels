@@ -9,25 +9,25 @@
       <div class="flex space-x-6">
         <router-link
             to="/"
-            class="nav-link hover:text-purple-accent transition duration-300"
+            class="nav-link transition duration-300"
         >
           Home
         </router-link>
         <router-link
             to="/about"
-            class="nav-link hover:text-purple-accent transition duration-300"
+            class="nav-link transition duration-300"
         >
           About
         </router-link>
         <router-link
             to="/projects"
-            class="nav-link hover:text-purple-accent transition duration-300"
+            class="nav-link transition duration-300"
         >
           Projects
         </router-link>
         <router-link
             to="/contact"
-            class="nav-link hover:text-purple-accent transition duration-300"
+            class="nav-link transition duration-300"
         >
           Contact
         </router-link>
@@ -54,6 +54,7 @@ export default {
 <style scoped>
 .nav-link {
   position: relative;
+  color: white; /* Keep text color white */
 }
 
 .nav-link::after {
@@ -63,7 +64,7 @@ export default {
   height: 4px;
   bottom: -4px;
   left: 0;
-  background-color: #6a0dad;
+  background-color: #6a0dad; /* Purple underline */
   transition: width 0.3s ease-in-out;
 }
 
