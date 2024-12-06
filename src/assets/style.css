@@ -23,3 +23,7 @@ body {
 .hover\:text-purple-accent:hover {
     color: #6a0dad;
 }
+
+.border-purple-accent {
+    border-color: #6a0dad;
+}
