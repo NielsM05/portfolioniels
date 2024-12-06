@@ -54,7 +54,7 @@ export default {
 <style scoped>
 .nav-link {
   position: relative;
-  color: white; /* Keep text color white */
+  color: white;
 }
 
 .nav-link::after {
@@ -64,7 +64,7 @@ export default {
   height: 4px;
   bottom: -4px;
   left: 0;
-  background-color: #6a0dad; /* Purple underline */
+  background-color: #6a0dad;
   transition: width 0.3s ease-in-out;
 }
 
