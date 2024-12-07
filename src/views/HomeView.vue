@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-darkest-blue text-white min-h-screen flex items-center justify-center">
+  <div class="bg-darkest-blue text-white min-h-screen flex flex-col items-center justify-center relative">
     <!-- Main Box -->
     <div
         class="group relative bg-zinc-900/50 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col md:items-start items-center justify-center gap-6 backdrop-blur-md box-container"
@@ -27,21 +27,35 @@
         </div>
       </div>
     </div>
+
+    <!-- Shape Divider -->
+    <div class="custom-shape-divider-bottom-1733574888">
+      <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+      >
+        <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+        ></path>
+      </svg>
+    </div>
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   data() {
     return {
       positions: [
-        'Developer',
-        'Student Cyber Security',
-        'Co-founder of Stellarnode',
+        "Developer",
+        "Student Cyber Security",
+        "Co-founder of Stellarnode",
       ],
-      currentText: '',
+      currentText: "",
       typingSpeed: 100,
     };
   },
@@ -61,7 +75,7 @@ export default {
             this.deleteText(() => {
               positionIndex = (positionIndex + 1) % this.positions.length;
               charIndex = 0;
-              this.currentText = '';
+              this.currentText = "";
               type();
             });
           }, 1500);
@@ -86,6 +100,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 /* Box Glow */
 .box-container {
@@ -93,7 +108,7 @@ export default {
 }
 
 .box-container::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border: 3px solid #4a5568; /* Default gray border */
@@ -121,7 +136,7 @@ export default {
 }
 
 .glow-button::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px; /* Adjust to cover the border */
   border-radius: inherit;
@@ -141,6 +156,26 @@ export default {
 .glow-effect {
   text-shadow: 0 0 8px #7c3aed, 0 0 16px #7c3aed;
 }
+
+/* Shape Divider */
+.custom-shape-divider-bottom-1733574888 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1733574888 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1733574888 .shape-fill {
+  fill: #6a0dad;
+}
 </style>
-
-
