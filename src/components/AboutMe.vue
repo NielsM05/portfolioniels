@@ -93,13 +93,13 @@ export default {
   },
   methods: {
     loadInitialSkills() {
-      // Load the first 5 skills initially
-      this.visibleSkills = this.allSkills.slice(0, 5);
+      // Load the first 6 skills initially
+      this.visibleSkills = this.allSkills.slice(0, 6);
     },
     toggleSkills() {
-      // Toggle between showing all skills and initial 5 skills
+      // Toggle between showing all skills and initial 6 skills
       if (this.showAllSkills) {
-        this.visibleSkills = this.allSkills.slice(0, 5);
+        this.visibleSkills = this.allSkills.slice(0, 6);
       } else {
         this.visibleSkills = this.allSkills;
       }
