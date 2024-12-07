@@ -4,7 +4,7 @@
     <div class="bg-darkest-blue text-white min-h-screen flex flex-col items-center justify-center relative">
       <!-- Main Box -->
       <div
-          class="group relative bg-zinc-900/50 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col md:items-start items-center justify-center gap-6 backdrop-blur-md box-container"
+          class="group relative bg-zinc-900/50 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col md:items-start items-center justify-center gap-6 backdrop-blur-md glow-box-container"
           style="width: 770px; max-width: 770px;"
       >
         <!-- Left Section -->
@@ -108,33 +108,29 @@ export default {
 </script>
 
 <style scoped>
-/* Box Glow */
-.box-container {
+/* Glow Effect for Main Box */
+.glow-box-container {
   position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.box-container::before {
+.glow-box-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  border: 3px solid #4a5568; /* Default gray border */
+  border: 3px solid rgba(124, 58, 237, 0.5); /* Glow border */
   border-radius: inherit;
   pointer-events: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box-container:hover::before {
-  border-color: #7c3aed; /* Glow color */
+.glow-box-container:hover::before {
+  border-color: #7c3aed;
   box-shadow: 0 0 15px #7c3aed;
 }
 
-/* Disable Glow on Box when Button is Hovered */
-.glow-button:hover ~ .box-container::before {
-  border-color: #4a5568; /* Reset to default gray */
-  box-shadow: none; /* Remove the glow */
-}
-
-/* Button Glow Effect */
+/* Glow Button */
 .glow-button {
   position: relative;
   border: 2px solid #4a5568; /* Default gray border */
@@ -158,7 +154,7 @@ export default {
   box-shadow: 0 0 15px #7c3aed;
 }
 
-/* Glow effect for the text */
+/* Glow Effect for Text */
 .glow-effect {
   text-shadow: 0 0 8px #7c3aed, 0 0 16px #7c3aed;
 }
