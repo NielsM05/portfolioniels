@@ -42,7 +42,9 @@
     </div>
 
     <!-- About Me Section -->
-    <AboutMe />
+    <div id="about">
+      <AboutMe />
+    </div>
   </div>
 </template>
 
