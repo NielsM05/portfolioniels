@@ -13,12 +13,12 @@
         >
           Home
         </router-link>
-        <router-link
-            to="/about"
+        <a
+            href="#about"
             class="nav-link transition duration-300"
         >
           About
-        </router-link>
+        </a>
         <router-link
             to="/projects"
             class="nav-link transition duration-300"
