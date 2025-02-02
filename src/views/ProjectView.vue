@@ -33,7 +33,7 @@
 export default {
   name: "ProjectView",
   components: {
-    Waves
+    
   }
 };
 </script>
