@@ -10,8 +10,8 @@
         <!-- Left Section -->
         <div class="flex-1 flex md:flex-row flex-col items-center gap-8 text-center md:text-left">
           <!-- Image Placeholder -->
-          <div class="w-48 h-48 bg-gray-700 rounded-full flex items-center justify-center text-2xl font-bold">
-            Placeholder
+          <div class="w-48 h-48  rounded-full flex items-center justify-center text-2xl font-bold">
+            <img src="../assets/images/portfoliofoto.png" alt="">
           </div>
           <!-- Right Section -->
           <div>
@@ -24,7 +24,7 @@
             </div>
             <!-- Glow Button -->
             <button class="glow-button font-semibold px-6 bg-zinc-950/50 backdrop-blur-md py-3 rounded-xl text-white/90 border-[2px] border-gray-700 mt-6">
-              Learn more
+              <a href="#about">Learn more</a>
             </button>
           </div>
         </div>
